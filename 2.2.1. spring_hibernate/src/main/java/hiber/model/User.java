@@ -23,6 +23,7 @@ public class User {
    @JoinColumn(name = "car_id")
    private Car car;
 
+
    public User() {}
    
    public User(String firstName, String lastName, String email, Car car) {
@@ -70,5 +71,14 @@ public class User {
 
    public Car getCar() {
       return car;
+   }
+
+   @Override
+   public String toString(){
+      return String.format("Id = %d\n" +
+                           "First Name = %s\n" +
+                           "Last Name = %s\n" +
+                           "Email = %s",
+                           id, firstName, lastName, email);
    }
 }

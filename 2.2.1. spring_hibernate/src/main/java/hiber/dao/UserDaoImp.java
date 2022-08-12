@@ -17,6 +17,7 @@ public class UserDaoImp implements UserDao {
       this.sessionFactory = sessionFactory;
 
    }
+
    @Transactional
    @Override
    public void add(User user) {

@@ -54,6 +54,6 @@ public class Car {
     }
 
     public String toString() {
-        return String.format("модель: %s, серия: %d", model, series);
+        return String.format("Car = модель: %s, серия: %d", model, series);
     }
 }
